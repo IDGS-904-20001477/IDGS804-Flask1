@@ -21,13 +21,13 @@ def operaciones():
         return'''
             <form action = "/operaciones" method = "POST">
             <label>Suma: </label>
-            <input type = "radio" name = "suma"/></br></br>
+            <input type = "radio" name = "opera" value = "suma"/></br></br>
             <label>Resta: </label>
-            <input type = "radio" name = "resta"/></br></br>
+            <input type = "radio" name = "opera" value = "resta"/></br></br>
             <label>Multiplicación: </label>
-            <input type = "radio" name = "multiplicacion"/></br></br>
+            <input type = "radio" name = "opera" value = "multiplicacion"/></br></br>
             <label>Division: </label>
-            <input type = "radio" name = "division"/></br></br>
+            <input type = "radio" name = "opera" value = "division"/></br></br>
             <label>N1: </label>
             <input type = "text" name = "num1"/></br></br>
             <label>N2: </label>
