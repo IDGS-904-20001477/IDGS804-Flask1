@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Distancia entre 2 puntos</h1>
+    <div class="container">
+        <div class="row">
+            <form class="form-horizontal" name="form1" action="/distancia" method="post">
+                <div class="control-group">
+                    <label for="txtX1" class="control-label">Punto 1</label>
+                    <div class="controls">
+                        <input type="text" name="txtX1" class="input-xlarge"
+                        placeholder="X1" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="txtY1" class="control-label">Punto 2</label>
+                    <div class="controls">
+                        <input type="text" name="txtY1" class="input-xlarge"
+                        placeholder="Y1" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="txtX2" class="control-label">Punto 3</label>
+                    <div class="controls">
+                        <input type="text" name="txtX2" class="input-xlarge"
+                        placeholder="X2" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="txtY2" class="control-label">Punto 4</label>
+                    <div class="controls">
+                        <input type="text" name="txtY2" class="input-xlarge"
+                        placeholder="Y2" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-default btn-primary">
+                            <i class="icon-Calculate icon-white"></i>Calcular
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
