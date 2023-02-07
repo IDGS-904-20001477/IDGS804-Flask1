@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+    body{
+        background-image: url("https://www.cinepremiere.com.mx/wp-content/uploads/2020/03/cin%C3%A9polis.jpg");
+    }
+</style>
+<h1 style="text-align: center;">CINEPOLIS</h1><br>
+    <div class="container">
+        <div class="row-12">
+            <form class="form-horizontal" name="form1" action="/ticket" method="post">
+                <div class="control-group">
+                    <label for="txtNombre" class="control-label" style="font-size: x-large;">Nombre</label>
+                    <div class="controls">
+                        <input type="text" name="txtNombre" class="input-xlarge"
+                        placeholder="Nombre" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="txtCompradores" class="control-label" style="font-size: x-large;">Cantidad compradores</label>
+                    <div class="controls">
+                        <input type="text" name="txtCompradores" class="input-xlarge"
+                        placeholder="Compradores" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="txtTarjeta" class="control-label" style="font-size: x-large;">Tarjeta </label>
+                    <div class="controls" style="font-size: x-large;">
+                        <label for="txtSI">SI 
+                            <input type="radio" name="Tarjeta" value="SI">
+                        </label>
+                        <label for="txtNO" class="contraol-label">NO 
+                            <input type="radio" name="Tarjeta" value="NO" checked>
+                        </label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="txtCantidad" class="control-label" style="font-size: x-large;">Cantidad de boletos</label>
+                    <div class="controls">
+                        <input type="text" name="txtCantidad" class="input-xlarge"
+                        placeholder="Cantidad" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-default btn-success" style="font-size: x-large;">
+                            <i></i>Procesar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
