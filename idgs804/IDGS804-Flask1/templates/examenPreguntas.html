@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 style="text-align: center;">EXAMEN</h1>
+<div class="container">
+    <div class="row">
+        <form class="form-horizontal" name="form1" action="/preguntas" method="post">
+            <div class="control-group">
+                <label for="txtP1" style="font-size: large;">1- ¿Quien fue el ganador del mundial de futbol 2022?</label>
+                    <div style="font-size: x-large;">
+                        <label for="txtR">Rusia 
+                            <input type="radio" name="P1" value="rusia">
+                        </label>
+                        <label for="txtA" class="contraol-label">Argentina 
+                            <input type="radio" name="P1" value="argentina" >
+                        </label>
+                        <label for="txtE" class="contraol-label">Ecuador 
+                            <input type="radio" name="P1" value="ecuador" >
+                        </label>
+                        <label for="txtJ" class="contraol-label">Jamaica 
+                            <input type="radio" name="P1" value="jamaica" >
+                        </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="txtP2" style="font-size: large;">2- ¿Que genero musical es mejor?</label>
+                    <div style="font-size: x-large;">
+                        <label for="txtCumbia">Cumbia 
+                            <input type="radio" name="P2" value="cumbia">
+                        </label>
+                        <label for="txtRegueton" class="contraol-label">Regueton 
+                            <input type="radio" name="P2" value="regueton" >
+                        </label>
+                        <label for="txtSka" class="contraol-label">Ska 
+                            <input type="radio" name="P2" value="ska" >
+                        </label>
+                        <label for="txtBanda" class="contraol-label">Banda 
+                            <input type="radio" name="P2" value="banda" >
+                        </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="txtP3" style="font-size: large;">3- Mejor jugador</label>
+                    <div style="font-size: x-large;">
+                        <label for="txtMessi">Messi 
+                            <input type="radio" name="P3" value="messi">
+                        </label>
+                        <label for="txtCristiano" class="contraol-label">Cristiano Ronaldo 
+                            <input type="radio" name="P3" value="cristiano" >
+                        </label>
+                        <label for="txtRafa">Rafa Marquez 
+                            <input type="radio" name="P3" value="rafa">
+                        </label>
+                        <label for="txtNeymar" class="contraol-label">Neymar Jr 
+                            <input type="radio" name="P3" value="neymar" >
+                        </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="txtP4" style="font-size: large;">4- ¿Que hacen en la carrera de Turismo?</label>
+                    <div style="font-size: x-large;">
+                        <label for="txtDuro">Realizar trabajos duros en los hoteles 
+                            <input type="radio" name="P4" value="duro">
+                        </label>
+                        <label for="txtHotel" class="contraol-label">Saber como llevar a cabo un hotel 
+                            <input type="radio" name="P4" value="hotel" >
+                        </label>
+                        <label for="txtNada" class="contraol-label">Nada 
+                            <input type="radio" name="P4" value="nada" >
+                        </label>
+                        <label for="txtCargar" class="contraol-label">Cargar maquinaria 
+                            <input type="radio" name="P4" value="cargar" >
+                        </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="txtP5" style="font-size: large;">5- ¿El mejor cantante del mundo?</label>
+                    <div style="font-size: x-large;">
+                        <label for="txtMichael">Michael Jackson 
+                            <input type="radio" name="P5" value="michael">
+                        </label>
+                        <label for="txtJuan" class="contraol-label">Juan Gabriel 
+                            <input type="radio" name="P5" value="juan" >
+                        </label>
+                        <label for="txtFrank" class="contraol-label">Frank Sinatra 
+                            <input type="radio" name="P5" value="frank" >
+                        </label>
+                        <label for="txtPaulina" class="contraol-label">Paulina Rubio 
+                            <input type="radio" name="P5" value="pau" >
+                        </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-default btn-success" style="font-size: x-large;">
+                        <i></i>Terminar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
